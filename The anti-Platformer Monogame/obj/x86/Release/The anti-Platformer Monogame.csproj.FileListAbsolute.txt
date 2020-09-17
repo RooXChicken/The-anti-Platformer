@@ -1,0 +1,98 @@
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\The anti-Platformer Monogame.exe
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\The anti-Platformer Monogame.pdb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\MonoGame.Framework.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.MediaFoundation.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.XAudio2.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.DXGI.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.Direct3D11.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.Direct2D1.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.XInput.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\MonoGame.Framework.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.MediaFoundation.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.XAudio2.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.DXGI.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.Direct3D11.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.Direct2D1.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\SharpDX.XInput.xml
+D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Release\The anti-Platformer Monogame.csprojAssemblyReference.cache
+D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Release\The anti-Platformer Monogame.csproj.CoreCompileInputs.cache
+D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Release\The anti-Platformer Monogame.csproj.CopyComplete
+D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Release\The anti-Platformer Monogame.exe
+D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Release\The anti-Platformer Monogame.pdb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Fonts\font.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\antiarmor_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\antiarmor_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\antihealth_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\antihealth_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\armor_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\armor_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\health_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Health and Armor\health_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\antiarmor_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\antiarmor_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\antihealth_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\antihealth_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\armor_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\armor_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\health_05.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Health and Armor\health_1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Tiles\Tile0.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Tiles\tile1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Tiles\Tile6.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Tiles\Tile0.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Tiles\tile1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Tiles\Tile6.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Roo\idle.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Roo\jump.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Roo\walk.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Roo\idle.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Roo\jump.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Roo\walk.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\damage.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\dive.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\Jump1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\Jump2.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\Jump3.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\Jump4.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Roo\Jump5.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\damage.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\dive.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\Jump1.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\Jump2.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\Jump3.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\Jump4.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Roo\Jump5.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Music\tutorial.wma
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Music\tutorial.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Enviornment\coin.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Music\tutorial.wma
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Music\tutorial.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sounds\Jump.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sounds\Enviornment\coin.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Fonts\font.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Pause Menu\options.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Pause Menu\pauseMenu.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Pause Menu\quit.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Pause Menu\resume.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Pause Menu\options.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Pause Menu\pauseMenu.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Pause Menu\quit.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Pause Menu\resume.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\DiscordRPC.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Newtonsoft.Json.dll
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\DiscordRPC.pdb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\DiscordRPC.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Newtonsoft.Json.xml
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\Pause Menu\play.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\the anti-Platformer L'ogo.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\UI\the anti-Platformer Logo.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Roo\crouch.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Roo\crouchhb.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Sprites\Roo\dive.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\Pause Menu\play.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\UI\the anti-Platformer Logo.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Roo\crouch.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Roo\crouchhb.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Release\Content\Content\Sprites\Roo\dive.xnb

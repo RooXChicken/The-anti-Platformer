@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Cutscenes/intro.wmv</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Fonts/font.spritefont</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Enviornment/coin.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Music/tutorial.mp3</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/damage.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/dive.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump1.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump2.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump3.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump4.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump5.wav</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Enemies/test_lower.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Enemies/test_upper.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Particles/square.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Roo/crouch.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Roo/dive.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Roo/idle.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Roo/jump.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Roo/walk.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/Tile0.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/tile1.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/Tile6.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/antiarmor_05.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/antiarmor_1.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/antihealth_05.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/antihealth_1.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/armor_05.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/armor_1.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/health_05.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Health and Armor/health_1.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/options.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/pauseMenu.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/play.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/quit.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/resume.png</File>
+    <File>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/UI/the anti-Platformer Logo.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>Content/Sounds/Roo/Dive.wav</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

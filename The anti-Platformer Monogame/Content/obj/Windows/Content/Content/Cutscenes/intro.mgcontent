@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Cutscenes/intro.wmv</SourceFile>
+  <SourceTime>2020-08-21T19:43:38.7843103-04:00</SourceTime>
+  <DestFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/bin/Windows/Content/Content/Cutscenes/intro.xnb</DestFile>
+  <DestTime>2020-09-17T18:59:11.3714782-04:00</DestTime>
+  <Importer>WmvImporter</Importer>
+  <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
+  <Processor>VideoProcessor</Processor>
+  <ProcessorTime>2018-12-08T11:35:54-05:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/bin/Windows/Content/Content/Cutscenes/intro.wmv</string>
+  </BuildOutput>
+</PipelineBuildEvent>

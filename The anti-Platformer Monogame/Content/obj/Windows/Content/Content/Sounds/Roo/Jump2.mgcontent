@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump2.wav</SourceFile>
+  <SourceTime>2020-05-12T11:30:15-04:00</SourceTime>
+  <DestFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/bin/Windows/Content/Content/Sounds/Roo/Jump2.xnb</DestFile>
+  <DestTime>2020-09-17T18:59:13.1770763-04:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2018-12-08T11:35:54-05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
