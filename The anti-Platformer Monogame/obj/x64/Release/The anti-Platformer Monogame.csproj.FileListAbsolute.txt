@@ -1,1 +1,0 @@
-D:\Monogame Projects\The anti-Platformer Monogame\obj\x64\Release\The anti-Platformer Monogame.csproj.CoreCompileInputs.cache

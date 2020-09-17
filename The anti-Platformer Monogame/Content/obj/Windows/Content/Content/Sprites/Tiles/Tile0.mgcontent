@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/Tile0.png</SourceFile>
+  <SourceFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogamebroken/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/Tile0.png</SourceFile>
   <SourceTime>2020-07-04T00:21:32.0575281-04:00</SourceTime>
-  <DestFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogame/Content/bin/Windows/Content/Content/Sprites/Tiles/Tile0.xnb</DestFile>
-  <DestTime>2020-09-17T18:59:14.1057537-04:00</DestTime>
+  <DestFile>C:/Users/rooxc/Downloads/The anti-Platformer Monogamebroken/The anti-Platformer Monogame/Content/bin/Windows/Content/Content/Sprites/Tiles/Tile0.xnb</DestFile>
+  <DestTime>2020-09-17T18:57:41.2155973-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

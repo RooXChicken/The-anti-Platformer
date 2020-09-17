@@ -13,7 +13,7 @@
     <AssemblyName>The anti-Platformer Monogame</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>Windows</MonoGamePlatform>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -48,6 +48,9 @@
     <PlatformTarget>x64</PlatformTarget>
     <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Managers\Animation.cs" />
     <Compile Include="Managers\Button.cs" />
@@ -68,8 +71,8 @@
     <Reference Include="DiscordRPC, Version=1.0.150.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\DiscordRichPresence.1.0.150\lib\net35\DiscordRPC.dll</HintPath>
     </Reference>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MonoGame.Framework.Portable.3.7.1.189\lib\portable-net45+win8+wpa81\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -82,12 +85,16 @@
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.config" />
     <None Include="app.manifest" />
     <None Include="Content\Sprites\Roo\Roo_Idle1.xnb" />
     <None Include="Content\Tiles\Tile0.xnb" />
     <None Include="Content\Tiles\Tile1.xnb" />
     <None Include="Content\Tiles\Tile6.xnb" />
     <None Include="Content\Sprites\Roo\Walking\walk.xnb" />
+    <None Include="packages.config" />
+    <None Include="packages.config" />
+    <None Include="packages.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

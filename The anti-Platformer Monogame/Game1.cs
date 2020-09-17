@@ -29,7 +29,6 @@ namespace The_anti_Platformer_Monogame
         Texture2D quitButton;
         Texture2D playButton;
         Texture2D ap_logo;
-        Texture2D vidTexture = null;
 
         //Sounds
         SoundEffect coinCollect;
@@ -72,10 +71,6 @@ namespace The_anti_Platformer_Monogame
 
         //Consts
 
-        //Cutscenes and videos
-        Video intro;
-        VideoPlayer vidPlayer;
-
         //Enemies
         Enemy enemy1 = new Enemy();
 
@@ -97,8 +92,6 @@ namespace The_anti_Platformer_Monogame
             animation = new Animation();
             map = new Map();
             button = new Button();
-            vidPlayer = new VideoPlayer();
-
             base.Initialize();
         }
 
@@ -107,21 +100,15 @@ namespace The_anti_Platformer_Monogame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //setting variables
-            player.spriteBatch = spriteBatch;
             Tiles.Content = Content;
-            player.content = Content;
-            player.Load(Content);
             camera = new Camera(GraphicsDevice.Viewport);
-            player.LoadMap(new Vector2(0, 0));
-            map.DiscordInitialize(currentLevel);
-            titleScreen = true;
-            intro = Content.Load<Video>(Content.RootDirectory + "/Cutscenes/intro");
+            //map.DiscordInitialize(currentLevel);
             text = Content.Load<SpriteFont>(Content.RootDirectory + "/Fonts/font");
 
             //ui
             playButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/play");
             quitButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/quit");
-            ap_logo = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/the anti-Platformer Logo");
+            ap_logo = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/the anti-Platformer Logo");
             //ui
 
             //sounds
@@ -129,6 +116,7 @@ namespace The_anti_Platformer_Monogame
             //sounds
 
             //pixelArt = Content.Load<SpriteFont>("pixelArt");
+            titleScreen = false;
         }
 
         protected override void UnloadContent()
@@ -138,8 +126,6 @@ namespace The_anti_Platformer_Monogame
 
         protected override void Update(GameTime gameTime)
         {
-            
-
             if (titleScreen)
             {
                 button.IsPressed(824, 500, playButton, graphics);
@@ -151,7 +137,7 @@ namespace The_anti_Platformer_Monogame
                     //fonts
 
                     //music
-                    tutorial = Content.Load<Song>(Content.RootDirectory + "/Sounds/Music/tutorial");
+                    //tutorial = Content.Load<Song>(Content.RootDirectory + "/Sounds/Music/tutorial");
                     //music
 
                     //ui
@@ -171,6 +157,11 @@ namespace The_anti_Platformer_Monogame
                     //enemies
                     enemy1.enemySpriteUpper = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Enemies/test_upper");
                     enemy1.enemySpriteLower = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Enemies/test_lower");
+
+                    player.spriteBatch = spriteBatch;
+                    player.content = Content;
+                    player.LoadMap(new Vector2(0, 0));
+                    player.Load(Content);
 
                     map.Generate(Levels.tutorial, 64);
 
@@ -197,7 +188,7 @@ namespace The_anti_Platformer_Monogame
 
                     if (button.hasBeenPressed)
                     {
-                        System.Environment.Exit(0);
+                        
                     }
                 }
 
@@ -270,6 +261,16 @@ namespace The_anti_Platformer_Monogame
                 hasReleased = true;
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Q) && hasReleased)
+            {
+                hasReleased = false;
+                
+            }
+            if (Keyboard.GetState().IsKeyUp(Keys.Q))
+            {
+                hasReleased = true;
+            }
+
             if (!enemy1.hasBeenKilled)
             {
                 enemy1.EnemyBase(1.0f, true, false, 0f, true, 0.6f, true, 1.0f, 1.0f, new Vector2(100, 0));
@@ -308,55 +309,31 @@ namespace The_anti_Platformer_Monogame
             {
                 GraphicsDevice.Clear(Color.CornflowerBlue);
 
-                if(vidPlayer.State == MediaState.Stopped && !hasPlayed)
-                {
-                    hasPlayed = true;
-                    vidPlayer.Play(intro);
-                }
-                
-                if(vidPlayer.State == MediaState.Playing)
-                {
-                    vidTexture = vidPlayer.GetTexture();
-                }
-
-                if (vidPlayer.State == MediaState.Stopped)
-                {
-                    intro = null;
-                }
-
                 spriteBatch.Begin(transformMatrix: matrix);
 
-                if(vidPlayer.State == MediaState.Playing)
+                button.HoveringOver(824, 500, playButton, graphics);
+
+                if (button.hoveringOver)
                 {
-                    spriteBatch.Draw(vidTexture, new Vector2(0, 0), Color.White);
+                    spriteBatch.Draw(playButton, new Rectangle(795, 490, 326, 125), Color.White);
+                }
+                else
+                {
+                    spriteBatch.Draw(playButton, new Vector2(824, 500), Color.White);
                 }
 
-                if(vidPlayer.State == MediaState.Stopped)
+                button.HoveringOver(824, 750, quitButton, graphics);
+
+                if (button.hoveringOver)
                 {
-                    button.HoveringOver(824, 500, playButton, graphics);
-
-                    if (button.hoveringOver)
-                    {
-                        spriteBatch.Draw(playButton, new Rectangle(795, 490, 326, 125), Color.White);
-                    }
-                    else
-                    {
-                        spriteBatch.Draw(playButton, new Vector2(824, 500), Color.White);
-                    }
-
-                    button.HoveringOver(824, 750, quitButton, graphics);
-
-                    if (button.hoveringOver)
-                    {
-                        spriteBatch.Draw(quitButton, new Rectangle(795, 740, 326, 125), Color.White);
-                    }
-                    else
-                    {
-                        spriteBatch.Draw(quitButton, new Vector2(824, 750), Color.White);
-                    }
-
-                    spriteBatch.Draw(ap_logo, new Vector2(670, 200), Color.White);
+                    spriteBatch.Draw(quitButton, new Rectangle(795, 740, 326, 125), Color.White);
                 }
+                else
+                {
+                    spriteBatch.Draw(quitButton, new Vector2(824, 750), Color.White);
+                }
+
+                spriteBatch.Draw(ap_logo, new Vector2(670, 200), Color.White);
 
                 spriteBatch.End();
 

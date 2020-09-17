@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
-using System.Collections.Generic;
 
 namespace The_anti_Platformer_Monogame
 {
@@ -127,8 +126,8 @@ namespace The_anti_Platformer_Monogame
                 hasJumped = true;
                 isGrounded = false;
                 randomJumpSound = rand.Next(1,5);
-                jump = content.Load<SoundEffect>(content.RootDirectory + "/Sounds/Roo/Jump" + randomJumpSound);
-                jump.Play();
+                //jump = content.Load<SoundEffect>(content.RootDirectory + "/Sounds/Roo/Jump" + randomJumpSound);
+                //jump.Play();
                 Position.Y -= 0.01f;
                 velocity.Y += -17;
             }
