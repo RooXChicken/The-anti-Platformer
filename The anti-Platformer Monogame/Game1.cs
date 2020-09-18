@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -14,7 +16,6 @@ namespace The_anti_Platformer_Monogame
         SpriteBatch spriteBatch;
 
         //Sprites
-        Texture2D roo_Placeholder;
         Texture2D health_05;
         Texture2D health_1;
         Texture2D antihealth_1;
@@ -31,8 +32,6 @@ namespace The_anti_Platformer_Monogame
         Texture2D ap_logo;
 
         //Sounds
-        SoundEffect coinCollect;
-        SoundEffect dive;
 
         //Music
         Song tutorial;
@@ -58,7 +57,6 @@ namespace The_anti_Platformer_Monogame
         bool hasReleased;
         bool isFullscreen = true;
         bool titleScreen = true;
-        bool hasPlayed = false;
 
         //Other
         Player player;
@@ -71,8 +69,9 @@ namespace The_anti_Platformer_Monogame
 
         //Consts
 
+
         //Enemies
-        Enemy enemy1 = new Enemy();
+        //Enemy enemy1 = new Enemy();
 
 
         public Game1()
@@ -92,6 +91,7 @@ namespace The_anti_Platformer_Monogame
             animation = new Animation();
             map = new Map();
             button = new Button();
+
             base.Initialize();
         }
 
@@ -100,23 +100,21 @@ namespace The_anti_Platformer_Monogame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //setting variables
+            player.spriteBatch = spriteBatch;
             Tiles.Content = Content;
-            camera = new Camera(GraphicsDevice.Viewport);
-            //map.DiscordInitialize(currentLevel);
+
+            titleScreen = true;
             text = Content.Load<SpriteFont>(Content.RootDirectory + "/Fonts/font");
 
             //ui
             playButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/play");
             quitButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/quit");
-            ap_logo = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/the anti-Platformer Logo");
+            ap_logo = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/the anti-Platformer Logo");
             //ui
 
             //sounds
 
             //sounds
-
-            //pixelArt = Content.Load<SpriteFont>("pixelArt");
-            titleScreen = false;
         }
 
         protected override void UnloadContent()
@@ -137,7 +135,7 @@ namespace The_anti_Platformer_Monogame
                     //fonts
 
                     //music
-                    //tutorial = Content.Load<Song>(Content.RootDirectory + "/Sounds/Music/tutorial");
+                    tutorial = Content.Load<Song>(Content.RootDirectory + "/Sounds/Music/tutorial");
                     //music
 
                     //ui
@@ -155,15 +153,17 @@ namespace The_anti_Platformer_Monogame
                     //ui
 
                     //enemies
-                    enemy1.enemySpriteUpper = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Enemies/test_upper");
-                    enemy1.enemySpriteLower = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Enemies/test_lower");
-
-                    player.spriteBatch = spriteBatch;
-                    player.content = Content;
-                    player.LoadMap(new Vector2(0, 0));
-                    player.Load(Content);
+                    //enemy1.enemySpriteUpper = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Enemies/test_upper");
+                    //enemy1.enemySpriteLower = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Enemies/test_lower");
 
                     map.Generate(Levels.tutorial, 64);
+
+                    player.content = Content;
+                    player.Load(Content);
+                    camera = new Camera(GraphicsDevice.Viewport);
+                    player.LoadMap(new Vector2(0, 0));
+
+                    map.DiscordInitialize(currentLevel);
 
                     titleScreen = false;
 
@@ -188,7 +188,7 @@ namespace The_anti_Platformer_Monogame
 
                     if (button.hasBeenPressed)
                     {
-                        
+                        Exit();
                     }
                 }
 
@@ -246,7 +246,7 @@ namespace The_anti_Platformer_Monogame
             {
                 player.Collision(tile.Rectangle, map.Width, map.Height);
 
-                enemy1.Collision(tile.Rectangle, map.Width, map.Height);
+                //enemy1.Collision(tile.Rectangle, map.Width, map.Height);
 
                 camera.Update(player.Position, map.Width, map.Height, graphicsManager);
             }
@@ -261,20 +261,12 @@ namespace The_anti_Platformer_Monogame
                 hasReleased = true;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Q) && hasReleased)
-            {
-                hasReleased = false;
-                
-            }
-            if (Keyboard.GetState().IsKeyUp(Keys.Q))
-            {
-                hasReleased = true;
-            }
-
+            /*
             if (!enemy1.hasBeenKilled)
             {
                 enemy1.EnemyBase(1.0f, true, false, 0f, true, 0.6f, true, 1.0f, 1.0f, new Vector2(100, 0));
             }
+            */
 
             //saving and loading
             if (Keyboard.GetState().IsKeyDown(Keys.S))
@@ -303,7 +295,7 @@ namespace The_anti_Platformer_Monogame
         {
             scaleX = (float)graphics.PreferredBackBufferWidth / 1920;
             scaleY = (float)graphics.PreferredBackBufferHeight / 1080;
-            matrix = Matrix.CreateScale(scaleX, scaleY, 0f);
+            matrix = Matrix.CreateScale(scaleX, scaleY, 1f);
 
             if (titleScreen)
             {
@@ -420,6 +412,7 @@ namespace The_anti_Platformer_Monogame
                 animation.currentFrame = 0;
             }
 
+            /*
             if (!enemy1.hasBeenKilled)
             {
                 spriteBatch.Draw(enemy1.enemySpriteUpper, enemy1.pos, Color.White);
@@ -428,6 +421,7 @@ namespace The_anti_Platformer_Monogame
             {
                 spriteBatch.Draw(enemy1.enemySpriteLower, enemy1.pos, Color.White);
             }
+            */
 
             spriteBatch.DrawString(text, "Use the left and right arrow keys \n             to move", new Vector2(200, 200), Color.White);
             map.Draw(spriteBatch);
@@ -439,9 +433,41 @@ namespace The_anti_Platformer_Monogame
             //ui
             spriteBatch.Begin(transformMatrix: matrix);
 
-            for(int i = 0;i < player.health;i++)
+            int x = 0;
+            int y = 0;
+
+            if (player.health % 2 == 0)
             {
-                spriteBatch.Draw(health_1, new Vector2(i * 100 + 10, 10), Color.White);
+                for (int i = 0; i < player.health / 2; i++)
+                {
+                    spriteBatch.Draw(health_1, new Vector2(i * 100 + 10, 10), Color.White);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < (player.health / 2); i++)
+                {
+                    spriteBatch.Draw(health_1, new Vector2(i * 100 + 10, 10), Color.White);
+                    x = i;
+                }
+                spriteBatch.Draw(health_05, new Vector2(x * 100 + 10, 10), Color.White);
+            }
+
+            if (player.antihealth % 2 == 0)
+            {
+                for (int i = 0; i < player.antihealth / 2; i++)
+                {
+                    spriteBatch.Draw(antihealth_1, new Vector2((i + x) * 100 + 10, 10), Color.White);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < (player.antihealth / 2); i++)
+                {
+                    spriteBatch.Draw(antihealth_1, new Vector2((i + x) * 100 + 10, 10), Color.White);
+                    y = i + x;
+                }
+                spriteBatch.Draw(antihealth_05, new Vector2(y * 100 + 10, 10), Color.White);
             }
 
             spriteBatch.End();

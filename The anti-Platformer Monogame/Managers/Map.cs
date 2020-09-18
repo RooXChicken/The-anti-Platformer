@@ -72,7 +72,7 @@ namespace The_anti_Platformer_Monogame
 
             client.SetPresence(new RichPresence()
             {
-                Details = "Singleplayer",
+                Details = "Development Build",
                 State = "Playing Level " + currentLevel,
                 Assets = new Assets()
                 {

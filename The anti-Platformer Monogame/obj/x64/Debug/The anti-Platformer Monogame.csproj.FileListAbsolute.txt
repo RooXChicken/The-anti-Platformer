@@ -1,0 +1,2 @@
+C:\Users\rooxc\Downloads\The anti-Platformer Monogame\obj\x64\Debug\The anti-Platformer Monogame.csprojAssemblyReference.cache
+C:\Users\rooxc\Downloads\The anti-Platformer Monogame\obj\x64\Debug\The anti-Platformer Monogame.csproj.CoreCompileInputs.cache

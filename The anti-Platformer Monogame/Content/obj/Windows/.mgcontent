@@ -14,17 +14,13 @@
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump3.wav</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump4.wav</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sounds/Roo/Jump5.wav</File>
-    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Enemies/test.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Enemies/test_lower.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Enemies/test_upper.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Particles/square.png</File>
-    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Particles/test.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/crouch.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/dive.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/idle.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/jump.png</File>
-    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/roo_head_large.png</File>
-    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/roo_head_small.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Roo/walk.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/Tile0.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/Tiles/tile1.png</File>
@@ -42,18 +38,14 @@
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/play.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/quit.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/resume.png</File>
-    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/the anti-Platformer Logo.png</File>
+    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/the anti-Platformer Logo.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
+    <File>Content/Sounds/Roo/Dive.wav</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

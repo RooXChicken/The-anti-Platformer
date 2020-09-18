@@ -12,7 +12,7 @@ namespace The_anti_Platformer_Monogame
         bool hasStarted = false;
 
         Player player = new Player();
-        float gravity;
+        //float gravity;
         public Texture2D enemySpriteUpper;
         public Texture2D enemySpriteLower;
         Rectangle rectangle;

@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Collections.Generic;
 
 namespace The_anti_Platformer_Monogame
 {
@@ -30,9 +31,9 @@ namespace The_anti_Platformer_Monogame
         public bool hasJumped = false;
 
         //Floats
-        public float health = 2f;
+        public float health = 4f;
         public float damage;
-        public float antihealth;
+        public float antihealth = 0f;
         float jumpPressedRemembered = 0f;
         float movementSpeed;
         float crouchedSpeed;
@@ -51,7 +52,6 @@ namespace The_anti_Platformer_Monogame
         public SpriteBatch spriteBatch;
         public ContentManager content;
         Random rand;
-        ParticleEngine particleEngine;
 
         public Player()
         {
@@ -69,7 +69,6 @@ namespace The_anti_Platformer_Monogame
             dive = content.Load<SoundEffect>(content.RootDirectory + "/Sounds/Roo/Dive");
 
             particleTextures = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Particles/square");
-            particleEngine = new ParticleEngine(particleTextures, Position);
 
         }
 
@@ -87,10 +86,6 @@ namespace The_anti_Platformer_Monogame
                 velocity.Y += 0.6f;
             }
             damage = 2;
-
-            particleEngine.EmitterLocation = Position;
-            particleEngine.SetVariables(particleTextures, Position, new Vector2(-5, 0), 0f, 0f, Color.White, 0.25f, 10);
-            particleEngine.Update();
         }
 
         private void Input(GameTime gameTime)
@@ -126,8 +121,8 @@ namespace The_anti_Platformer_Monogame
                 hasJumped = true;
                 isGrounded = false;
                 randomJumpSound = rand.Next(1,5);
-                //jump = content.Load<SoundEffect>(content.RootDirectory + "/Sounds/Roo/Jump" + randomJumpSound);
-                //jump.Play();
+                jump = content.Load<SoundEffect>(content.RootDirectory + "/Sounds/Roo/Jump" + randomJumpSound);
+                jump.Play();
                 Position.Y -= 0.01f;
                 velocity.Y += -17;
             }

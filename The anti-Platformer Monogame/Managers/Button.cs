@@ -6,8 +6,6 @@ namespace The_anti_Platformer_Monogame
 {
     class Button
     {
-        int x = 0;
-        int y = 0;
         bool isInputPressed = false;
         public bool hasBeenPressed;
         public bool hoveringOver;
