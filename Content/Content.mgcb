@@ -362,6 +362,30 @@
 /processorParam:TextureFormat=Color
 /build:Content/Sprites/UI/Pause Menu/resume.png
 
+#begin Content/Sprites/UI/splash.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Content/Sprites/UI/splash.png
+
+#begin Content/Sprites/UI/splashtext.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Content/Sprites/UI/splashtext.png
+
 #begin Content/Sprites/UI/the anti-Platformer Logo.png
 /importer:TextureImporter
 /processor:TextureProcessor

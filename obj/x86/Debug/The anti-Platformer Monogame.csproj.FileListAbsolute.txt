@@ -202,3 +202,7 @@ D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Debug\The anti
 D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Debug\The anti-Platformer.pdb
 D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Debug\The anti-Platformer.exe
 D:\Monogame Projects\The anti-Platformer Monogame\obj\x86\Debug\The anti-Platformer.pdb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Debug\Content\Content\Sprites\UI\splash.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Debug\Content\Sprites\UI\splash.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Debug\Content\Sprites\UI\splashtext.xnb
+D:\Monogame Projects\The anti-Platformer Monogame\bin\Windows\x86\Debug\Content\Content\Sprites\UI\splashtext.xnb

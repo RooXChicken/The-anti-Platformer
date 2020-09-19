@@ -38,6 +38,8 @@
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/play.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/quit.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/Pause Menu/resume.png</File>
+    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/splash.png</File>
+    <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/splashtext.png</File>
     <File>D:/Monogame Projects/The anti-Platformer Monogame/Content/Content/Sprites/UI/the anti-Platformer Logo.png</File>
   </SourceFiles>
   <DestFiles>
@@ -46,6 +48,8 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>Content/Sounds/Roo/Dive.wav</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Runtime.CompilerServices;
+﻿using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -30,6 +28,7 @@ namespace The_anti_Platformer_Monogame
         Texture2D quitButton;
         Texture2D playButton;
         Texture2D ap_logo;
+        Texture2D splashText;
 
         //Sounds
 
@@ -44,10 +43,13 @@ namespace The_anti_Platformer_Monogame
         //Floats
         float scaleX;
         float scaleY;
+        float timer = 2;
 
         //Ints
         int Width = 1920;
         int Height = 1080;
+        int mAlphaValue = 255;
+        int mFadeIncrement = -3;
 
         //Strings
         string currentLevel = "tutorial";
@@ -57,6 +59,7 @@ namespace The_anti_Platformer_Monogame
         bool hasReleased;
         bool isFullscreen = true;
         bool titleScreen = true;
+        bool splashFinished = false;
 
         //Other
         Player player;
@@ -66,6 +69,7 @@ namespace The_anti_Platformer_Monogame
         GraphicsDeviceManager graphicsManager;
         Button button;
         Matrix matrix;
+        double mFadeDelay = .035;
 
         //Consts
 
@@ -105,6 +109,7 @@ namespace The_anti_Platformer_Monogame
 
             titleScreen = true;
             text = Content.Load<SpriteFont>(Content.RootDirectory + "/Fonts/font");
+            splashText = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/splashtext");
 
             //ui
             playButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/play");
@@ -113,7 +118,6 @@ namespace The_anti_Platformer_Monogame
             //ui
 
             //sounds
-
             //sounds
         }
 
@@ -126,27 +130,44 @@ namespace The_anti_Platformer_Monogame
         {
             if (titleScreen)
             {
+                timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (timer <= 0f)
+                {
+                    mFadeDelay -= gameTime.ElapsedGameTime.TotalSeconds;
+                }
+
+                if (mFadeDelay <= 0)
+                {
+                    mFadeDelay = .015;
+
+                    mAlphaValue += mFadeIncrement;
+
+                    if (mAlphaValue <= 0)
+                    {
+                        splashFinished = true;
+                    }
+                }
+
+                if (!splashFinished)
+                {
+                    return;
+                }
+
                 button.IsPressed(824, 500, playButton, graphics);
 
                 if (button.hasBeenPressed)
                 {
-                    //fonts
-
-                    //fonts
-
-                    //music
-                    tutorial = Content.Load<Song>(Content.RootDirectory + "/Sounds/Music/tutorial");
-                    //music
-
                     //ui
                     health_1 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/health_1");
                     health_05 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/health_05");
                     antihealth_1 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/antihealth_1");
                     antihealth_05 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/antihealth_1");
+                    /*
                     armor_1 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/armor_1");
                     armor_05 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/armor_05");
                     antiarmor_1 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/antiarmor_1");
                     antiarmor_05 = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Health and Armor/antiarmor_05");
+                    */
                     pauseMenu = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/pauseMenu");
                     resumeButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/resume");
                     optionsButton = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/UI/Pause Menu/options");
@@ -274,6 +295,8 @@ namespace The_anti_Platformer_Monogame
                 using(StreamWriter outputFile = new StreamWriter(Path.Combine(Content.RootDirectory + "save.txt")))
                 {
                     outputFile.WriteLine(player.Position);
+                    outputFile.WriteLine(player.health);
+                    outputFile.WriteLine(player.velocity);
                 }
             }
             if (Keyboard.GetState().IsKeyDown(Keys.L))
@@ -281,8 +304,14 @@ namespace The_anti_Platformer_Monogame
                 using(StreamReader inputFile = new StreamReader(Path.Combine(Content.RootDirectory + "save.txt")))
                 {
                     string pos = inputFile.ReadLine();
+                    string healthfile = inputFile.ReadLine();
+                    string velocity = inputFile.ReadLine();
+                    player.velocity = new Vector2(0, 0);
                     player.Position.X = float.Parse(pos.Substring(pos.IndexOf("X:") + 2, pos.IndexOf(" Y") - (pos.IndexOf("X:") + 2)));
                     player.Position.Y = float.Parse(pos.Substring(pos.IndexOf("Y:") + 2, pos.IndexOf("}") - (pos.IndexOf("Y:") + 2)));
+                    player.health = float.Parse(healthfile);
+                    player.velocity.X = float.Parse(velocity.Substring(velocity.IndexOf("X:") + 2, velocity.IndexOf(" Y") - (velocity.IndexOf("X:") + 2)));
+                    player.velocity.Y = float.Parse(velocity.Substring(velocity.IndexOf("Y:") + 2, velocity.IndexOf("}") - (velocity.IndexOf("Y:") + 2)));
                 }
             }
             //saving and loading
@@ -302,6 +331,13 @@ namespace The_anti_Platformer_Monogame
                 GraphicsDevice.Clear(Color.CornflowerBlue);
 
                 spriteBatch.Begin(transformMatrix: matrix);
+
+                if (!splashFinished)
+                {
+                    spriteBatch.Draw(splashText, new Vector2(636, 493), new Color(255, 255, 255, mAlphaValue));
+                    spriteBatch.End();
+                    return;
+                }
 
                 button.HoveringOver(824, 500, playButton, graphics);
 

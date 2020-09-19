@@ -9,12 +9,18 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		The anti-Platformer|x64 = The anti-Platformer|x64
+		The anti-Platformer|x86 = The anti-Platformer|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.Debug|x64.ActiveCfg = Debug|x64
 		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.Debug|x64.Build.0 = Debug|x64
 		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.Debug|x86.ActiveCfg = Debug|x86
 		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.Debug|x86.Build.0 = Debug|x86
+		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.The anti-Platformer|x64.ActiveCfg = The anti-Platformer|x64
+		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.The anti-Platformer|x64.Build.0 = The anti-Platformer|x64
+		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.The anti-Platformer|x86.ActiveCfg = The anti-Platformer|x86
+		{62FEBEFF-C9CA-4437-B767-38A8A88A19B2}.The anti-Platformer|x86.Build.0 = The anti-Platformer|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

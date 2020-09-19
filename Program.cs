@@ -2,7 +2,6 @@
 
 namespace The_anti_Platformer_Monogame
 {
-#if WINDOWS || LINUX
     /// <summary>
     /// The main class.
     /// </summary>
@@ -18,5 +17,4 @@ namespace The_anti_Platformer_Monogame
                 game.Run();
         }
     }
-#endif
 }

@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
-using System.Collections.Generic;
+using System.IO;
 
 namespace The_anti_Platformer_Monogame
 {
@@ -17,7 +17,6 @@ namespace The_anti_Platformer_Monogame
         public Texture2D jumpTexture;
         public Texture2D diveTexture;
         public Texture2D crouchTexture;
-        Texture2D particleTextures;
 
         //Ints
         int randomJumpSound;
@@ -43,7 +42,7 @@ namespace The_anti_Platformer_Monogame
         SoundEffect dive;
 
         //Vectors
-        private Vector2 velocity;
+        public Vector2 velocity;
         public Vector2 Position;
 
         //Misc
@@ -68,8 +67,6 @@ namespace The_anti_Platformer_Monogame
             crouchTexture = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Roo/crouch");
             dive = content.Load<SoundEffect>(content.RootDirectory + "/Sounds/Roo/Dive");
 
-            particleTextures = Content.Load<Texture2D>(Content.RootDirectory + "/Sprites/Particles/square");
-
         }
 
         public void Update(GameTime gameTime)
@@ -85,7 +82,35 @@ namespace The_anti_Platformer_Monogame
             {
                 velocity.Y += 0.6f;
             }
-            damage = 2;
+            //damage = 2;
+
+            if(Position.Y > 2000)
+            {
+                //checkpoint code, need to make checkpoints
+                //oops
+                using (StreamReader inputFile = new StreamReader(Path.Combine(content.RootDirectory + "save.txt")))
+                {
+                    string pos = inputFile.ReadLine();
+                    Position.X = float.Parse(pos.Substring(pos.IndexOf("X:") + 2, pos.IndexOf(" Y") - (pos.IndexOf("X:") + 2)));
+                    Position.Y = float.Parse(pos.Substring(pos.IndexOf("Y:") + 2, pos.IndexOf("}") - (pos.IndexOf("Y:") + 2)));
+                    health--;
+                }
+            }
+
+            if(health <= 0)
+            {
+                //gameover
+                using (StreamReader inputFile = new StreamReader(Path.Combine(content.RootDirectory + "save.txt")))
+                {
+                    string pos = inputFile.ReadLine();
+                    string healthfile = inputFile.ReadLine();
+                    Position.X = float.Parse(pos.Substring(pos.IndexOf("X:") + 2, pos.IndexOf(" Y") - (pos.IndexOf("X:") + 2)));
+                    Position.Y = float.Parse(pos.Substring(pos.IndexOf("Y:") + 2, pos.IndexOf("}") - (pos.IndexOf("Y:") + 2)));
+                    health = float.Parse(healthfile);
+                }
+            }
+
+
         }
 
         private void Input(GameTime gameTime)
